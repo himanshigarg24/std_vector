@@ -143,7 +143,7 @@ for (auto i = g1.begin(); i != g1.end(); ++i)
         cout << *i << " "; 
 ```
 
-## Initialization 5 ways##
+## Initialization 5 ways ##
 ```
 // Method 1
 //
@@ -172,3 +172,8 @@ vector<int> vect2(vect1.begin(), vect1.end());
 		
 ```
 
+## Declaring iterator outside for loop ##
+```
+// Declaring iterator to a vector 
+    vector<int>::iterator ptr; 
+```
