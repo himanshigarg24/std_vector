@@ -136,3 +136,39 @@ Vector size after erase(): 0
 
 
 ```
+
+## Access using iterators ##
+```
+for (auto i = g1.begin(); i != g1.end(); ++i) 
+        cout << *i << " "; 
+```
+
+## Initialization 5 ways##
+```
+// Method 1
+//
+vector<int> vect(n, 10); 
+		
+// Method 2		
+//
+vector<int> vect;  
+vect.push_back(10); 
+vect.push_back(20);
+	
+// Method 3	
+//
+vector<int> vect{ 10, 20, 30 }; 
+		
+// Method 4		
+//
+int arr[] = { 10, 20, 30 }; 
+int n = sizeof(arr) / sizeof(arr[0]); 
+vector<int> vect(arr, arr + n); 
+		
+// Method 5		
+//
+vector<int> vect1{ 10, 20, 30 }; 
+vector<int> vect2(vect1.begin(), vect1.end()); 
+		
+```
+
